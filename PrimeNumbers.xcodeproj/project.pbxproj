@@ -8,24 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		1080872D1D54DE67007CC2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080872C1D54DE67007CC2BD /* AppDelegate.swift */; };
-		1080872F1D54DE67007CC2BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080872E1D54DE67007CC2BD /* ViewController.swift */; };
+		1080872F1D54DE67007CC2BD /* PrimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080872E1D54DE67007CC2BD /* PrimeViewController.swift */; };
 		108087321D54DE67007CC2BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108087301D54DE67007CC2BD /* Main.storyboard */; };
 		108087341D54DE67007CC2BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108087331D54DE67007CC2BD /* Assets.xcassets */; };
 		108087371D54DE67007CC2BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108087351D54DE67007CC2BD /* LaunchScreen.storyboard */; };
+		108087451D54DE83007CC2BD /* PrimeNumbersUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108087441D54DE83007CC2BD /* PrimeNumbersUnitTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		108087471D54DE83007CC2BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 108087211D54DE67007CC2BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 108087281D54DE67007CC2BD;
+			remoteInfo = PrimeNumbers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		108087291D54DE67007CC2BD /* PrimeNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1080872C1D54DE67007CC2BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1080872E1D54DE67007CC2BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1080872E1D54DE67007CC2BD /* PrimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeViewController.swift; sourceTree = "<group>"; };
 		108087311D54DE67007CC2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		108087331D54DE67007CC2BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		108087361D54DE67007CC2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		108087381D54DE67007CC2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		108087421D54DE83007CC2BD /* PrimeNumbersUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeNumbersUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		108087441D54DE83007CC2BD /* PrimeNumbersUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumbersUnitTests.swift; sourceTree = "<group>"; };
+		108087461D54DE83007CC2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		108087261D54DE67007CC2BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1080873F1D54DE83007CC2BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				1080872B1D54DE67007CC2BD /* PrimeNumbers */,
+				108087431D54DE83007CC2BD /* PrimeNumbersUnitTests */,
 				1080872A1D54DE67007CC2BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				108087291D54DE67007CC2BD /* PrimeNumbers.app */,
+				108087421D54DE83007CC2BD /* PrimeNumbersUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +78,22 @@
 			isa = PBXGroup;
 			children = (
 				1080872C1D54DE67007CC2BD /* AppDelegate.swift */,
-				1080872E1D54DE67007CC2BD /* ViewController.swift */,
+				1080872E1D54DE67007CC2BD /* PrimeViewController.swift */,
 				108087301D54DE67007CC2BD /* Main.storyboard */,
 				108087331D54DE67007CC2BD /* Assets.xcassets */,
 				108087351D54DE67007CC2BD /* LaunchScreen.storyboard */,
 				108087381D54DE67007CC2BD /* Info.plist */,
 			);
 			path = PrimeNumbers;
+			sourceTree = "<group>";
+		};
+		108087431D54DE83007CC2BD /* PrimeNumbersUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				108087441D54DE83007CC2BD /* PrimeNumbersUnitTests.swift */,
+				108087461D54DE83007CC2BD /* Info.plist */,
+			);
+			path = PrimeNumbersUnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 108087291D54DE67007CC2BD /* PrimeNumbers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		108087411D54DE83007CC2BD /* PrimeNumbersUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 108087491D54DE83007CC2BD /* Build configuration list for PBXNativeTarget "PrimeNumbersUnitTests" */;
+			buildPhases = (
+				1080873E1D54DE83007CC2BD /* Sources */,
+				1080873F1D54DE83007CC2BD /* Frameworks */,
+				108087401D54DE83007CC2BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				108087481D54DE83007CC2BD /* PBXTargetDependency */,
+			);
+			name = PrimeNumbersUnitTests;
+			productName = PrimeNumbersUnitTests;
+			productReference = 108087421D54DE83007CC2BD /* PrimeNumbersUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					108087281D54DE67007CC2BD = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					108087411D54DE83007CC2BD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 108087281D54DE67007CC2BD;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				108087281D54DE67007CC2BD /* PrimeNumbers */,
+				108087411D54DE83007CC2BD /* PrimeNumbersUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		108087401D54DE83007CC2BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,12 +197,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1080872F1D54DE67007CC2BD /* ViewController.swift in Sources */,
+				1080872F1D54DE67007CC2BD /* PrimeViewController.swift in Sources */,
 				1080872D1D54DE67007CC2BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1080873E1D54DE83007CC2BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108087451D54DE83007CC2BD /* PrimeNumbersUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		108087481D54DE83007CC2BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 108087281D54DE67007CC2BD /* PrimeNumbers */;
+			targetProxy = 108087471D54DE83007CC2BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		108087301D54DE67007CC2BD /* Main.storyboard */ = {
@@ -269,6 +347,30 @@
 			};
 			name = Release;
 		};
+		1080874A1D54DE83007CC2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PrimeNumbersUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.earoa.PrimeNumbersUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrimeNumbers.app/PrimeNumbers";
+			};
+			name = Debug;
+		};
+		1080874B1D54DE83007CC2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PrimeNumbersUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.earoa.PrimeNumbersUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrimeNumbers.app/PrimeNumbers";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -288,6 +390,16 @@
 				1080873D1D54DE67007CC2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		108087491D54DE83007CC2BD /* Build configuration list for PBXNativeTarget "PrimeNumbersUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1080874A1D54DE83007CC2BD /* Debug */,
+				1080874B1D54DE83007CC2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
